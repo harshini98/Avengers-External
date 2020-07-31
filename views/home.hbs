@@ -6,7 +6,7 @@
         <p>{{location}}</p>
         <p>Likes: {{ likes }}
         <form method="POST" action="/event/like">
-        <input type="hidden" value="{{id}}" name="id">
+        <input type="hidden" value="{{_id}}" name="id">
         <input type="submit" "btn btn-primary" value="Like">
         </form>
         {{!-- <form method="POST" action="/event/unlike">
