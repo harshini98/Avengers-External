@@ -4,6 +4,16 @@
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
         <p>{{location}}</p>
+        <p>Likes: {{ likes }}
+        <form method="POST" action="/event/like">
+        <input type="hidden" value="{{id}}" name="id">
+        <input type="submit" "btn btn-primary" value="Like">
+        </form>
+        {{!-- <form method="POST" action="/event/unlike">
+        <input type="hidden" value="{{id}}" name="id">
+        <input type="submit" value="UN-Like">
+        </form> --}}
+        </p>
     </li>
   {{/events}}
 </ul>
